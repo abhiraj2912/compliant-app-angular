@@ -9,6 +9,8 @@ import { HttpClientModule } from '@angular/common/http'
 import { RouterModule, Routes } from '@angular/router';
 import { UserRegisterComponent } from './user-register/user-register.component';
 import { UserLoginComponent } from './user-login/user-login.component';
+import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
+import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 
 const myRoute:Routes=[
   {
@@ -30,14 +32,16 @@ const myRoute:Routes=[
     AppComponent,
     AdminLoginComponent,
     UserRegisterComponent,
-    UserLoginComponent
+    UserLoginComponent,
+    AdminNavbarComponent,
+    UserNavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
