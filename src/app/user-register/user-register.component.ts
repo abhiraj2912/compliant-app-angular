@@ -20,7 +20,7 @@ export class UserRegisterComponent {
   cpassword=""
 
   
-  readValues=()=>{
+  registerValues=()=>{
     if (this.password==this.cpassword) {
       let data:any={"name" : this.name, "address" : this.address, "pincode" : this.pincode, "email" : this.email, "phone" : this.phone, "username" : this.username, "password" : this.password}
       console.log(data)
@@ -35,6 +35,7 @@ export class UserRegisterComponent {
             this.email=""
             this.username=""
             this.password=""
+            this.cpassword=""
           } else {
             alert("Something went wrong")
           }
