@@ -15,4 +15,8 @@ export class ApiService {
   loginCheck=(loginData:any)=>{
     return this.http.post("http://localhost:8080/login",loginData)
   }
+
+  userInfo=(userId:any)=>{
+    return this.http.post("http://localhost:8080/userinfo",userId)
+  }
 }
