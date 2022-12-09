@@ -11,6 +11,7 @@ import { UserRegisterComponent } from './user-register/user-register.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { UserNavbarComponent } from './user-navbar/user-navbar.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 const myRoute:Routes=[
   {
@@ -24,6 +25,10 @@ const myRoute:Routes=[
   {
     path:"usersignup",
     component:UserRegisterComponent
+  },
+  {
+    path:"userprofile",
+    component:UserProfileComponent
   }
 ]
 
@@ -34,7 +39,8 @@ const myRoute:Routes=[
     UserRegisterComponent,
     UserLoginComponent,
     AdminNavbarComponent,
-    UserNavbarComponent
+    UserNavbarComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,

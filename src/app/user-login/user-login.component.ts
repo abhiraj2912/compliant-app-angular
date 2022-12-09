@@ -24,7 +24,7 @@ export class UserLoginComponent {
           let userId:any=response.id
           console.log(userId)
           localStorage.setItem("userInfo", userId)
-          this.route.navigate(['/viewprofile'])
+          this.route.navigate(['/userprofile'])
         } else {
           alert("Invalid Credentials")
         }
