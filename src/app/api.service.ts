@@ -19,4 +19,8 @@ export class ApiService {
   userInfo=(userId:any)=>{
     return this.http.post("http://localhost:8080/userinfo",userId)
   }
+
+  addCompliant=(compliantData:any)=>{
+    return this.http.post("http://localhost:8080/addcompliant",compliantData)
+  }
 }

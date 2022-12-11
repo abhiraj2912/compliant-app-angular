@@ -13,6 +13,8 @@ import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { AddCompliantComponent } from './add-compliant/add-compliant.component';
+import { UserViewCompliantComponent } from './user-view-compliant/user-view-compliant.component';
 
 const myRoute:Routes=[
   {
@@ -34,6 +36,10 @@ const myRoute:Routes=[
   {
     path:"adminhome",
     component:AdminDashboardComponent
+  },
+  {
+    path:"addcompliant",
+    component:AddCompliantComponent
   }
 ]
 
@@ -46,7 +52,9 @@ const myRoute:Routes=[
     AdminNavbarComponent,
     UserNavbarComponent,
     UserProfileComponent,
-    AdminDashboardComponent
+    AdminDashboardComponent,
+    AddCompliantComponent,
+    UserViewCompliantComponent
   ],
   imports: [
     BrowserModule,
