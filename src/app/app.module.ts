@@ -12,6 +12,7 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 
 const myRoute:Routes=[
   {
@@ -29,6 +30,10 @@ const myRoute:Routes=[
   {
     path:"userprofile",
     component:UserProfileComponent
+  },
+  {
+    path:"adminhome",
+    component:AdminDashboardComponent
   }
 ]
 
@@ -40,7 +45,8 @@ const myRoute:Routes=[
     UserLoginComponent,
     AdminNavbarComponent,
     UserNavbarComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    AdminDashboardComponent
   ],
   imports: [
     BrowserModule,
