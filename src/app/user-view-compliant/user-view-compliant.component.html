@@ -1,0 +1,28 @@
+<app-user-navbar></app-user-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+          <div class="row g-3 mt-4">
+            <div class="col col-12 col-sm-12 col-mg-12 col-lg-12 col-xl-12 col-xxl-12">
+                <h2>My Compliants</h2>
+            </div>
+            <div class="col col-12 col-sm-12 col-mg-12 col-lg-12 col-xl-12 col-xxl-12">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Compliant</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of data; let index=index">
+                    <td>{{index+1}}</td>
+                    <td>{{i.compliant}}</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+        </div>
+    </div>
+</div>

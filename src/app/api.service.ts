@@ -19,4 +19,16 @@ export class ApiService {
   userInfo=(userId:any)=>{
     return this.http.post("http://localhost:8080/userinfo",userId)
   }
+
+  addCompliant=(compliantData:any)=>{
+    return this.http.post("http://localhost:8080/addcompliant",compliantData)
+  }
+
+  adminViewAll=()=>{
+    return this.http.get("http://localhost:8080/acompliantview")
+  }
+
+  userViewCompliants=(userData:any)=>{
+    return this.http.post("http://localhost:8080/ucompliantview",userData)
+  }
 }
